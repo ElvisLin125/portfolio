@@ -50,7 +50,7 @@ export function Hero() {
             >
               {portfolioConfig.name.split(' ')[0]}
               <br />
-              <span className="text-white/40 italic">{portfolioConfig.name.split(' ')[1]}.</span>
+              <span className="text-accent italic">{portfolioConfig.name.split(' ')[1]}.</span>
             </motion.h1>
 
             <div className="mt-12 md:mt-20">

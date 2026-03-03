@@ -20,7 +20,7 @@ export function Contact() {
           <h2 className="text-6xl md:text-[8vw] leading-[0.85] font-serif tracking-tighter mb-12">
             Let's Make
             <br />
-            <span className="italic text-black/40">Contact.</span>
+            <span className="italic text-accent">Contact.</span>
           </h2>
 
           <div className="space-y-4 font-sans text-sm tracking-wider uppercase text-black/60">
