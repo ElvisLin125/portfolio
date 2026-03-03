@@ -98,7 +98,7 @@ export const portfolioConfig = {
   contact: {
     email: "elvis.125.ma@gmail.com",
     linkedin: "https://www.linkedin.com/in/yourprofile",
-    github: "https://github.com/yourusername",
+    github: "https://github.com/elvislin125",
     location: "California, USA",
     status: "Open to new opportunities",
   },
