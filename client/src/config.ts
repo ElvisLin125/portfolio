@@ -26,12 +26,12 @@ export const portfolioConfig = {
     },
     {
       id: 3,
-      title: "AI Writing Assistant",
+      title: "Zillow Extension",
       description:
-        "An AI-powered application that helps writers overcome block using LLMs.",
+        "Extension to speed up Zillow listing review with a floating, sleek quick-scan panel.",
       imageUrl: "https://images.unsplash.com/photo-1455390582262-044cdead2708",
       link: "https://github.com",
-      techStack: ["React", "Express", "OpenAI", "WebSockets"],
+      techStack: ["JavaScript", "Chrome Extensions API"],
       featured: true,
     },
   ],
