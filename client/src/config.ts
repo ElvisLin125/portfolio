@@ -30,8 +30,10 @@ export const portfolioConfig = {
       description:
         "Extension to speed up Zillow listing review with a floating, sleek quick-scan panel.",
       imageUrl: "https://images.unsplash.com/photo-1455390582262-044cdead2708",
-      link: "https://github.com",
-      techStack: ["JavaScript", "Chrome Extensions API"],
+      videoUrl:
+        "https://res.cloudinary.com/ddxbfapey/video/upload/v1772518924/zillow_lnloum.mov",
+      link: "https://github.com/ElvisLin125/zillow-extension",
+      techStack: ["JavaScript", "Chrome Extensions API", "HTML"],
       featured: true,
     },
   ],

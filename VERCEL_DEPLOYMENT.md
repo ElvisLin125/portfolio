@@ -19,12 +19,12 @@
    - **Build Command**: `npx vite build` (or keep `npm run build`)
    - **Output Directory**: `dist/public` ⚠️ (change from `dist`)
    - **Install Command**: Keep default (`npm install`)
-   
    - Click "Deploy"
 
 ## Configuration
 
 The `vercel.json` file configures Vercel to:
+
 - Build the static client using Vite
 - Serve files from `dist/public`
 - Route all requests to `index.html` for SPA navigation
