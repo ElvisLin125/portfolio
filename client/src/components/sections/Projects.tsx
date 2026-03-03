@@ -61,7 +61,7 @@ export function Projects() {
                   <img
                     src={project.imageUrl || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"}
                     alt={project.title}
-                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 rounded-md"
                   />
                 </motion.div>
               </div>

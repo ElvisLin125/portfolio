@@ -31,7 +31,7 @@ export function Experience() {
             </motion.a>
           </div>
           <p className="font-sans text-xs tracking-[0.2em] uppercase text-white/40 hidden md:block">
-            Scene 03
+            Scene 02
           </p>
         </motion.div>
 
