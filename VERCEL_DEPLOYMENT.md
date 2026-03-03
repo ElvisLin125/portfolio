@@ -13,7 +13,13 @@
    - Go to [vercel.com](https://vercel.com)
    - Click "New Project"
    - Import your GitHub repository
-   - Vercel will auto-detect the settings from `vercel.json`
+   
+   **IMPORTANT - Override these settings:**
+   - **Framework Preset**: Select **"Other"** (not Vite)
+   - **Build Command**: `npm run build` ✓ (keep default)
+   - **Output Directory**: `dist` ✓ (keep default)
+   - **Install Command**: Keep default
+   
    - Click "Deploy"
 
 ## Configuration
