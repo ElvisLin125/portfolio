@@ -60,7 +60,16 @@ app.use((req, res, next) => {
 });
 
 (async () => {
+  const { seedDatabase } = await import("./routes");
+  
   await registerRoutes(httpServer, app);
+  
+  // Try to seed database but don't fail if it doesn't work (e.g., table doesn't exist yet)
+  try {
+    await seedDatabase();
+  } catch (error) {
+    console.log("Seeding failed or database not ready yet:", error);
+  }
 
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
