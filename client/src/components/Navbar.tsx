@@ -33,7 +33,7 @@ export function Navbar() {
       </div>
       
       <div className="hidden md:flex gap-8 text-xs font-sans tracking-[0.2em] uppercase">
-        {["Work", "Experience", "Contact"].map((item) => (
+        {[ "Experience", "Projects", "Contact"].map((item) => (
           <button
             key={item}
             onClick={() => scrollTo(item.toLowerCase())}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { portfolioConfig } from "@/config";
+import { SkillTree } from "../SkillTree";
 
 export function Hero() {
   const containerVariants = {
@@ -32,7 +33,7 @@ export function Hero() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="relative z-10 max-w-7xl mx-auto w-full"
+        className="relative z-10 max-w-7xl mx-auto w-full h-full flex flex-col"
       >
         <motion.p 
           variants={itemVariants}
@@ -41,34 +42,40 @@ export function Hero() {
           Scene 01 &mdash; Introduction
         </motion.p>
         
-        <motion.h1 
-          variants={itemVariants}
-          className="text-[12vw] md:text-[8vw] leading-[0.85] font-serif uppercase tracking-tighter"
-        >
-          {portfolioConfig.name.split(' ')[0]}
-          <br />
-          <span className="text-white/40 italic">{portfolioConfig.name.split(' ')[1]}.</span>
-        </motion.h1>
-
-        <div className="mt-16 md:mt-32 grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 flex-1">
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-2">
-            <p className="font-sans text-base md:text-xl leading-relaxed text-white/70 max-w-xl">
-              {portfolioConfig.bio}
-            </p>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="col-span-1 flex md:justify-end">
-            <div className="font-sans text-xs uppercase tracking-widest text-white/40 text-right flex flex-col items-end gap-2">
-              <span>Scroll to view</span>
-              <div className="w-[1px] h-12 bg-white/20 overflow-hidden">
-                <motion.div 
-                  className="w-full h-full bg-white origin-top"
-                  animate={{ scaleY: [0, 1, 0], translateY: ["0%", "0%", "100%"] }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                />
-              </div>
+            <motion.h1 
+              variants={itemVariants}
+              className="text-[12vw] md:text-[8vw] leading-[0.85] font-serif uppercase tracking-tighter"
+            >
+              {portfolioConfig.name.split(' ')[0]}
+              <br />
+              <span className="text-white/40 italic">{portfolioConfig.name.split(' ')[1]}.</span>
+            </motion.h1>
+
+            <div className="mt-12 md:mt-20">
+              <p className="font-sans text-base md:text-xl leading-relaxed text-white/70 max-w-xl">
+                {portfolioConfig.bio}
+              </p>
             </div>
           </motion.div>
+          
+          <motion.div variants={itemVariants} className="col-span-1 h-80 md:h-96 relative">
+            {/* <SkillTree /> */}
+          </motion.div>
+        </div>
+
+        <div className="mt-8 flex md:justify-end">
+          <div className="font-sans text-xs uppercase tracking-widest text-white/40 text-right flex flex-col items-end gap-2">
+            <span>Scroll to view</span>
+            <div className="w-[1px] h-12 bg-white/20 overflow-hidden">
+              <motion.div 
+                className="w-full h-full bg-white origin-top"
+                animate={{ scaleY: [0, 1, 0], translateY: ["0%", "0%", "100%"] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              />
+            </div>
+          </div>
         </div>
       </motion.div>
     </section>

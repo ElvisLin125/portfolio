@@ -10,9 +10,10 @@ export function Contact() {
   });
 
   const onSubmit = (data: InsertMessage) => {
-    mutate(data, {
-      onSuccess: () => form.reset(),
-    });
+    // mutate(data, {
+    //   onSuccess: () => form.reset(),
+    // });
+    window.open(`mailto:${portfolioConfig.contact.email}?subject=New Message from Portfolio&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`);
   };
 
   return (

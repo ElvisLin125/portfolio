@@ -57,9 +57,18 @@ export function Experience() {
                 </p>
               </div>
               <div className="w-full md:w-5/12">
-                <p className="font-sans text-white/50 text-sm leading-relaxed">
+                <p className="font-sans text-white/50 text-sm leading-relaxed mb-4">
                   {exp.description}
                 </p>
+                {exp.skills && exp.skills.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill) => (
+                      <span key={skill} className="font-sans text-[10px] tracking-wider uppercase bg-white/5 px-3 py-1 text-white/60">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

@@ -6,20 +6,20 @@ export const portfolioConfig = {
     {
       id: 1,
       title: "Photography and Film Portfolio",
-      description: "A cinematic, minimalist portfolio website showcasing my photography and film skills.",
+      description: "A cinematic, minimalist portfolio website showcasing my photography and film skills. Built with pure HTML, CSS, and JavaScript to showcase my ability to create engaging, performant web experiences without relying on frameworks.",
       // imageUrl: "https://images.unsplash.com/photo-1481481600673-6140111ea51a",
       imageUrl: "/portfolio.png",
-      link: "https://bessy-website.vercel.app/",
-      techStack: ["React", "TypeScript", "Next.js", "TypeAnimation"],
+      link: "https://elvislin125.github.io/ElvisLinPhotography/",
+      techStack: ["HTML", "CSS", "JavaScript"],
       featured: true,
     },
     {
       id: 2,
-      title: "E-Commerce Platform",
-      description: "High-performance headless e-commerce solution with real-time inventory management.",
+      title: "Bessy Preview Site",
+      description: "A preview site for my startup, Bessy, an AI-powered fashion platform.",
       imageUrl: "/bessy.png",
-      link: "https://github.com",
-      techStack: ["Next.js", "PostgreSQL", "Stripe", "Redis"],
+      link: "https://bessy-website.vercel.app/",
+      techStack: ["Next.js", "React", "Vercel", "Figma"],
       featured: false,
     },
     {
@@ -35,19 +35,39 @@ export const portfolioConfig = {
   experiences: [
     {
       id: 1,
-      company: "TechNova Solutions",
-      role: "Senior Fullstack Engineer",
-      startDate: "2021",
+      company: "Optum (Developer Portal)",
+      role: "Fullstack Engineer",
+      startDate: "2024",
       endDate: "Present",
-      description: "Lead architect for core microservices. Improved system latency by 40% and mentored junior developers.",
+      description: "Spearheaded implementation of a module federation architecture. Led the creation of service health monitoring dashboard.",
+      skills: ["React", "TypeScript", "Java", "AWS", "Module Federation"],
     },
     {
       id: 2,
-      company: "Creative Digital",
-      role: "Frontend Developer",
-      startDate: "2018",
-      endDate: "2021",
-      description: "Built award-winning interactive web experiences using React and advanced CSS animations.",
+      company: "Optum (Design Systems)",
+      role: "Frontend Engineer",
+      startDate: "2023",
+      endDate: "2024",
+      description: "Built token-based theming system. Developed accessible React component library used by dozens teams across the organization.",
+      skills: ["React", "TypeScript", "styled-components", "SASS", "Accessibility"],
+    },
+    {
+      id: 3,
+      company: "SAP",
+      role: "Fullstack Developer Intern",
+      startDate: "2022",
+      endDate: "2022",
+      description: "Implemented configuration-driven form generation. Accelerated feature development for partner teams.",
+      skills: ["React", "Node.js", "Microsoft Teams Integration"],
+    },
+    {
+      id: 4,
+      company: "UnitedHealth Group",
+      role: "Software Engineering Intern",
+      startDate: "2022",
+      endDate: "2022",
+      description: "Built an automated tool to validate SSL certificates across 4,300+ ESXi hosts, saving over 12 hours of effort per day.",
+      skills: ["Python", "Automation"],
     }
   ],
   skills: [
@@ -61,8 +81,8 @@ export const portfolioConfig = {
     { id: 8, category: "DevOps", name: "Docker / CI/CD" },
   ],
   contact: {
-    email: "alex@example.com",
-    location: "Digital Realm",
-    status: "Available for freelance opportunities"
+    email: "elvis@example.com",
+    location: "California, USA",
+    status: "Open to new opportunities",
   }
 };

@@ -15,7 +15,7 @@ export function Projects() {
 
   if (isLoading) {
     return (
-      <section id="work" className="py-32 px-6 md:px-12 border-t border-white/10 flex justify-center">
+      <section id="projects" className="py-32 px-6 md:px-12 border-t border-white/10 flex justify-center">
         <div className="animate-pulse w-32 h-1 bg-white/20" />
       </section>
     );
@@ -24,7 +24,7 @@ export function Projects() {
   if (!projects || projects.length === 0) return null;
 
   return (
-    <section id="work" ref={containerRef} className="py-32 px-6 md:px-12 bg-background relative z-10">
+    <section id="projects" ref={containerRef} className="py-32 px-6 md:px-12 bg-background relative z-10">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -33,7 +33,7 @@ export function Projects() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-24 flex items-baseline justify-between border-b border-white/10 pb-8"
         >
-          <h2 className="text-4xl md:text-7xl font-serif tracking-tighter">Selected Work</h2>
+          <h2 className="text-4xl md:text-7xl font-serif tracking-tighter">Projects</h2>
           <span className="font-sans text-xs tracking-[0.2em] uppercase text-white/40 hidden md:block">
             Scene 02
           </span>

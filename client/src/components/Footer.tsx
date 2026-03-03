@@ -6,9 +6,8 @@ export function Footer() {
       </p>
       
       <div className="flex gap-8 font-sans text-[10px] tracking-widest uppercase text-white/40">
-        <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-        <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Twitter</a>
+        <a href="https://github.com/elvislin125" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+        <a href="https://linkedin.com/in/elvislin125" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
       </div>
     </footer>
   );
