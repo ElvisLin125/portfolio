@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { insertMessageSchema } from "@shared/schema";
-import type { InsertMessage } from "@shared/schema";
+import { portfolioConfig } from "@/config";
 import { useCreateMessage } from "@/hooks/use-messages";
 
 export function Contact() {
   const { mutate, isPending } = useCreateMessage();
-  const form = useForm<InsertMessage>({
-    resolver: zodResolver(insertMessageSchema),
+  const form = useForm({
     defaultValues: { name: "", email: "", message: "" },
   });
 
@@ -37,8 +34,8 @@ export function Contact() {
           </h2>
           
           <div className="space-y-4 font-sans text-sm tracking-wider uppercase text-black/60">
-            <p>Based in the Digital Realm</p>
-            <p>Available for freelance opportunities</p>
+            <p>Based in the {portfolioConfig.contact.location}</p>
+            <p>{portfolioConfig.contact.status}</p>
           </div>
         </motion.div>
 

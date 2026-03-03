@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useExperiences } from "@/hooks/use-portfolio";
+import { portfolioConfig } from "@/config";
 
 export function Experience() {
   const { data: experiences, isLoading } = useExperiences();
@@ -20,7 +21,7 @@ export function Experience() {
           <div>
             <h2 className="text-4xl md:text-7xl font-serif tracking-tighter">Experience</h2>
             <motion.a 
-              href="/resume.pdf" 
+              href={portfolioConfig.resumeUrl} 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4 font-sans text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors border-b border-white/20 pb-1"
