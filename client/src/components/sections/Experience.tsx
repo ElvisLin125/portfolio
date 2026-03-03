@@ -17,7 +17,18 @@ export function Experience() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           className="mb-20 flex justify-between items-end"
         >
-          <h2 className="text-4xl md:text-7xl font-serif tracking-tighter">Experience</h2>
+          <div>
+            <h2 className="text-4xl md:text-7xl font-serif tracking-tighter">Experience</h2>
+            <motion.a 
+              href="/resume.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-4 font-sans text-xs tracking-widest uppercase text-white/60 hover:text-white transition-colors border-b border-white/20 pb-1"
+              whileHover={{ x: 5 }}
+            >
+              View Full Resume &rarr;
+            </motion.a>
+          </div>
           <p className="font-sans text-xs tracking-[0.2em] uppercase text-white/40 hidden md:block">
             Scene 03
           </p>

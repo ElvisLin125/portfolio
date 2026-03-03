@@ -44,16 +44,17 @@ export function Hero() {
           variants={itemVariants}
           className="text-[12vw] md:text-[8vw] leading-[0.85] font-serif uppercase tracking-tighter"
         >
-          Software
+          Alex
           <br />
-          <span className="text-white/40 italic">Engineer.</span>
+          <span className="text-white/40 italic">Rivera.</span>
         </motion.h1>
 
         <div className="mt-16 md:mt-32 grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
           <motion.div variants={itemVariants} className="col-span-1 md:col-span-2">
             <p className="font-sans text-base md:text-xl leading-relaxed text-white/70 max-w-xl">
-              I build cinematic digital experiences and robust architectures. 
-              Bridging the gap between brutalist aesthetics and seamless functionality.
+              I am a Fullstack Engineer dedicated to crafting high-performance web applications 
+              with a cinematic touch. From architecting scalable backends to designing 
+              pixel-perfect interfaces, I bring digital visions to life.
             </p>
           </motion.div>
           
