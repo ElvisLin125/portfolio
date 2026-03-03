@@ -6,7 +6,8 @@ export const portfolioConfig = {
     {
       id: 1,
       title: "Photography and Film Portfolio",
-      description: "A cinematic, minimalist portfolio website showcasing my photography and film skills. Built with pure HTML, CSS, and JavaScript to showcase my ability to create engaging, performant web experiences without relying on frameworks.",
+      description:
+        "A cinematic, minimalist portfolio website showcasing my photography and film skills. Built with pure HTML, CSS, and JavaScript to showcase my ability to create engaging, performant web experiences without relying on frameworks.",
       // imageUrl: "https://images.unsplash.com/photo-1481481600673-6140111ea51a",
       imageUrl: "/portfolio.png",
       link: "https://elvislin125.github.io/ElvisLinPhotography/",
@@ -16,7 +17,8 @@ export const portfolioConfig = {
     {
       id: 2,
       title: "Bessy Preview Site",
-      description: "A preview site for my startup, Bessy, an AI-powered fashion platform.",
+      description:
+        "A preview site for my startup, Bessy, an AI-powered fashion platform.",
       imageUrl: "/bessy.png",
       link: "https://bessy-website.vercel.app/",
       techStack: ["Next.js", "React", "Vercel", "Figma"],
@@ -25,12 +27,13 @@ export const portfolioConfig = {
     {
       id: 3,
       title: "AI Writing Assistant",
-      description: "An AI-powered application that helps writers overcome block using LLMs.",
+      description:
+        "An AI-powered application that helps writers overcome block using LLMs.",
       imageUrl: "https://images.unsplash.com/photo-1455390582262-044cdead2708",
       link: "https://github.com",
       techStack: ["React", "Express", "OpenAI", "WebSockets"],
       featured: true,
-    }
+    },
   ],
   experiences: [
     {
@@ -39,7 +42,8 @@ export const portfolioConfig = {
       role: "Fullstack Engineer",
       startDate: "2024",
       endDate: "Present",
-      description: "Spearheaded implementation of a module federation architecture. Led the creation of service health monitoring dashboard.",
+      description:
+        "Spearheaded implementation of a module federation architecture. Led the creation of service health monitoring dashboard.",
       skills: ["React", "TypeScript", "Java", "AWS", "Module Federation"],
     },
     {
@@ -48,8 +52,15 @@ export const portfolioConfig = {
       role: "Frontend Engineer",
       startDate: "2023",
       endDate: "2024",
-      description: "Built token-based theming system. Developed accessible React component library used by dozens teams across the organization.",
-      skills: ["React", "TypeScript", "styled-components", "SASS", "Accessibility"],
+      description:
+        "Built token-based theming system. Developed accessible React component library used by dozens teams across the organization.",
+      skills: [
+        "React",
+        "TypeScript",
+        "styled-components",
+        "SASS",
+        "Accessibility",
+      ],
     },
     {
       id: 3,
@@ -57,7 +68,8 @@ export const portfolioConfig = {
       role: "Fullstack Developer Intern",
       startDate: "2022",
       endDate: "2022",
-      description: "Implemented configuration-driven form generation. Accelerated feature development for partner teams.",
+      description:
+        "Implemented configuration-driven form generation. Accelerated feature development for partner teams.",
       skills: ["React", "Node.js", "Microsoft Teams Integration"],
     },
     {
@@ -66,9 +78,10 @@ export const portfolioConfig = {
       role: "Software Engineering Intern",
       startDate: "2022",
       endDate: "2022",
-      description: "Built an automated tool to validate SSL certificates across 4,300+ ESXi hosts, saving over 12 hours of effort per day.",
+      description:
+        "Built an automated tool to validate SSL certificates across 4,300+ ESXi hosts, saving over 12 hours of effort per day.",
       skills: ["Python", "Automation"],
-    }
+    },
   ],
   skills: [
     { id: 1, category: "Frontend", name: "React / Next.js" },
@@ -81,8 +94,10 @@ export const portfolioConfig = {
     { id: 8, category: "DevOps", name: "Docker / CI/CD" },
   ],
   contact: {
-    email: "elvis@example.com",
+    email: "elvis.125.ma@gmail.com",
+    linkedin: "https://www.linkedin.com/in/yourprofile",
+    github: "https://github.com/yourusername",
     location: "California, USA",
     status: "Open to new opportunities",
-  }
+  },
 };
