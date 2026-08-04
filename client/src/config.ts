@@ -4,6 +4,25 @@ export const portfolioConfig = {
   resumeUrl: "/Elvis_Lin_Fullstack_Resume.pdf",
   projects: [
     {
+      id: 0,
+      title: "Betty's Bakery",
+      description:
+        "A full-stack ordering site for a small home baking business. Customers browse the week's menu, build custom cookie boxes, and pay by Zelle; the owner runs everything — menu, weekly availability, orders, photos, reviews, and announcements — from a single admin dashboard. Built with Next.js App Router, Prisma, and a JWT-cookie admin auth flow.",
+      videoUrl:
+        "https://res.cloudinary.com/ddxbfapey/video/upload/v1785876025/Screen_Recording_2026-08-04_at_1.32.51_PM_eqyr4u.mov",
+      link: "https://www.bettysbaking.com/",
+      techStack: [
+        "Next.js",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Vercel",
+      ],
+      featured: true,
+    },
+    {
       id: 1,
       title: "Photography and Film Portfolio",
       description:

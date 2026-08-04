@@ -131,7 +131,7 @@ export function Projects() {
                   {project.techStack?.map((tech) => (
                     <span
                       key={tech}
-                      className="font-sans text-[10px] tracking-wider uppercase bg-white/5 px-3 py-1 text-white/60"
+                      className="font-sans text-[10px] tracking-wider uppercase bg-white/5 px-3 py-1 text-accent"
                     >
                       {tech}
                     </span>
